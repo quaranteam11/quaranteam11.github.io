@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="../../assets/css/Article-List.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark py-lg-4" id="mainNav" style="color: rgb(41,78,115);background: rgb(35,85,136);padding: 15px 10px;">
+        <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#">kvíz it4a</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="color: var(--cyan);">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">úvod</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../podklady.html">podklady</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../kviz.html">kvíz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-center text-white d-none d-lg-block site-heading"><span class="text-primary site-heading-upper mb-3">tým quaranteam</span><span class="site-heading-lower">PRG 9. otázka</span></h1>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Tvorba uživatelského rozhraní - menu, standardní dialogové boxy, panel nástrojů, stavový řádek</h1>
+                    </div>
+                    <div class="text">
+                        <p>Standardní dialogové boxy<br>Předdefinované standardizované dialogové boxy WINDOWS najdeme na <br>paletě komponent v&nbsp;záložce DIALOGS. V&nbsp;době návrhu aplikace se na <br>formuláři objevují jako malé zástupné ikony, které nejsou za běhu <br>programu vidět dokud nezavoláme jejich nejdůležitější vlastnost EXECUTE.<br> Poté se zobrazí příslušný dialogový box, chod programu je pozastaven a <br>existují 2 způsoby ukončení dialogu – OK, Cancel<br><strong>Open, Save Dialog – Vlastnosti</strong><br><img src="../../assets/img/29.png"><br><br>FontDialog – nastavení písma pro text. Editory – Vlastnosti<br><img src="../../assets/img/30.png"><br>&nbsp;<br>ColorDialog – nastavení barev<br>Umožňuje uživateli zvolit barvy pro různé části prostředí.<br>Vlastnosti<br>Color – se používá pro aktuální barvu na vstupu a vybranou barvu na výstupu<br>Panel nástrojů<br>&nbsp;<br>Panel nástrojů vytvoříme tak, že na formulář umístíme komponentu <br>Panel ze záložky Standard, nastavíme její vhodnou velikost (standardní <br>výška tlačítek je 25 bodů). Na panel pak umístíme jednotlivé tlačítka <br>SpeedButton ze záložky Additional. Mezi připadnými skupinami necháme <br>mezery.<br>SpeedButton<br>&nbsp;<br>Komponenta SpeedButton je velmi podobná komponentě BitBTN. Opět <br>zobrazuje obrázek (glyph) ale na rozdíl od BitBTN nezobrazuje text. <br>SpeedButton není ovladatelný klávesnicí a nelze se na něj dostat pomocí <br>klávesy TAB. Je výhradně pro ovládání myší. Panel nástrojů lze vytvořit <br>tak, že vždy musí být stlačeno právě jedno tlačítko ze skupiny. <br>Stlačením jiného předchozí vyskočí. Nebo může být zamáčknuto 0 až <br>nekonečně tlačítek.<br>Komponenta SpeedButton má pro spolupráci tlačítek vlastnost <br>GroupIndex. Standardně je nastavena na 0 což značí, že se jedná o <br>nezávislé tlačítko. Chceme-li vytvořit spolupracující skupinu musíme <br>nastavit vlastnost GroupIndex všech tlačítek ve skupině na stejné <br>nenulové kladné číslo.<br>Vlastností Down nastavíme, které tlačítko bude na počátku stlačeno. <br>Nestavením vlastnosti AllowAllUp na true pro danou skupinu umožníme aby <br>žádné tlačítko nebylo stlačeno.<br>Běžným prvkem u panelu nástrojů je přítomnost tzv. plovoucí nápovědy,<br> což je text stručně popisující tlačítko pod kurzorem. Text nápovědy <br>k&nbsp;danému tlačítku vyplníme do vlastnosti Hint. Zobrazování nápovědy <br>zajistíme nastavením vlastnosti ShowHint na true u jednotlivých <br>SpeedButtonů nebu u komponenty Panel pro všechny tlačítka.<br>&nbsp;<br>BitBTN – tlačítko s&nbsp;BITMAPOU<br>Komponenta BitBTN je velice podobná standardnímu tlačítku, pouze má <br>navíc některé vlastnost: BITMAPU – charakterizuje FCI tlačítka <br>(vizuálně).<br>Buton a BITBTN jsou při svém použití zaměnitelné, rozdíl je pouze vizuální.<br><strong>Vlastnosti</strong><br>Kind<br>Umožňuje výběr z&nbsp;předdefinovaných tlačítek, při zadání bkCustom je <br>možné pro tlačítko dodat libovolný obrázek. Nastavením vlastnosti KIND <br>se přednastaví i některé další vlastnosti např. caption<br><br>Glyph<br>Určuje přiřazení obrázku ke tlačítku<br><br>Layout<br>Umožňuje změnit uspořádání textu a obrázku na tlačítku (obr vlevo text vpravo apod.)<br><br>Margine<br>Udává odsazení obrázku s&nbsp;textem od okraje tlačítka, při nastavení na -1 je obrázek s&nbsp;textem na tlačítku vycentrovaný<br><br>Spacing<br>Udává velikost mezery mezi obrázkem a textem<br>&nbsp;<br>K&nbsp;vytvoření bitmapy je možné využít ImageEditor Delphi v&nbsp;menu Tools –<br> Image Editor, případně jiný rastrový editor. Je také možné využít <br>kolekce hotových obrázků. Pokud chceme aby velikost symbolů odpovídala <br>těm na standardních tlačítkách nastavíme velikost Bitmapy na 18×18 bodů.<br>&nbsp;<br>Bevel – oddělovací čáry a rámečky<br>Pokud je na formuláři větší počet komponent je vhodné jejich vizuální<br> rozdělení do skupin. K&nbsp;tomu lze využít komponentu Bevel, která však <br>není vlastníkem na ní umístěných komponent jak je tomu u panelu nebo <br>GroupBoxu. Možné jsou základní způsoby použití komponenty Bevel, které <br>nastavíme pomocí vlastnosti Shape.<br>Dva typy ráměčků:<br><br>bsbox – plošný tvar<br>bsframe – rámeček<br><br>Oddělovací čáry podle stran (bsBottom, bsTopLine, bsLeftLine, bsRightLine)<br>Style – podle toho jak nastavíme vlastnost bude čára buď opticky vyzvednuta (bsRaised) nebo ponořena (bslowered)<br>Status Bar – stavový řádek<br>K&nbsp;vytvoření stavového řádku slouží komponenta Status Bar v&nbsp;záložce <br>WIN32. Komponenta může být použita téměř jako panel pro zobrazování <br>nápovědy. Pro tento způsob použití musíme nastavit vlastnost SimplePanel<br> na true a pak můžeme pro výstup textu použít vlastnost SipmleText.<br>Výhoda komponenty Status Bar však spočívá v&nbsp;možnosti definice <br>množství podpanelů (rozčlenění stavového řádku na několik úseků). <br>Podpanely nadefinujeme StatusBarPanels editoru, který aktivujeme vlastní<br> Panels. Zde také nadefinujeme atributy každého podpanelu – text, šířka,<br> styl, 3D efekt, zarovnání textu.<br>Status Bar nejčastěji využijeme pro zobrazení informací o položce <br>menu právě vybrané uživatelem a pro stavové informace – např. stav <br>některých kláves, datum, čas, typ klávesnice apod.<br>&nbsp;<br>Použití stavového pruhu pro zobrazení nápovědy pro vybranou položku menu:<br>Text který chceme zobrazovat napíšeme do vlastnosti Hint jednotlivých<br> položek menu. Potom je možné sepsat kódpro zobrazování nápovědy při <br>najetí na položku menu.<br><br>Do deklarace napíšeme hlavičku procedury: procedure ShowHint (sender: TObject);<br>Pak dopíšeme samotnou proceduru:<br><br>Procedure TForm1.ShowHint(Sender: TObject);<br>Begin<br>StatusBar1.panels[0].text:=Application.Hint;<br>End;<br><br>Naprogramujeme událost OnCreate pro formulář:<br><br>Application.OnHint:= ShowHint;<br>&nbsp;<br>Pokud chceme stavový pruh využit k nápovědě pro tlačítka panelu <br>nástrojů, nastává problém, vlastnost Hint tlačítek je použita text <br>plovoucí nápovědy. Do vlastnosti Hint je však možné napsat nápovědy obě.<br> Nejdříve se zadá text plovoucí nápovědy, jako oddělovač se použije <br>svislá čára (ALT+124) a potom se zadá text pro nápovědu ve stavovém <br>pruhu<br>&nbsp;<br>Zobrazení stavu klávesy<br>Při zobrazení stavu klávesy musíme volat FCI GetKeyState, která vrací<br> číslo stavu. Jestliže je spodní (poslední) bit čísla 1 tak číslo je <br>liché, pak je klávesa stisknuta. Stav můžeme při stisku libovolné <br>klávesy tj. doprogramujeme událost OnKeyDown u Form.<br>If odd(GetKeyState(VK_CAPITAL))=true then StatusBar1.panels[2].text:= ‘CAPS’ else StatusBar1.panels[2].text:= ‘’;<br>Názvy kláves<br>VK_CAPITAL – caps lock<br>VK_SHIFT – shift<br>VK_CONTROL – CTRL<br>VK_F1 – F1<br>VK_A – A<br><br></p>
+                        <figure></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

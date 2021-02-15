@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="../../assets/css/Article-List.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark py-lg-4" id="mainNav" style="color: rgb(41,78,115);background: rgb(35,85,136);padding: 15px 10px;">
+        <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#">kvíz it4a</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="color: var(--cyan);">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">úvod</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../podklady.html">podklady</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../kviz.html">kvíz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-center text-white d-none d-lg-block site-heading"><span class="text-primary site-heading-upper mb-3">tým quaranteam</span><span class="site-heading-lower">PoS &amp; SOS 3. otázka</span></h1>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Model ISO/OSI, úlohy jednotlivých vrstev, aktivní prvky kabeláže, vrstvy modelu ISO/OSI. Architektura TCP/IP</h1>
+                    </div>
+                    <div class="text">
+                        <p><strong>Model ISO/OSI</strong><br>Vznikl jako snaha o standardizaci počítačových sítí, byl přijat 1984,<br> úkolem každé vrstvy je poskytovat služby následující vyšší vrstvě, v <br>každé vrstvě se pak k paketu přidávají další doplňkové informace.<br><strong>Fyzická vrstva (physical layer</strong>)<br>Se zabývá výhradně přenosem bitů, nabízí služby typu (přijmi bit, <br>odešli bit), jednotlivým bitům nepřisuzuje žádný specifický význam.<br><strong>Linková vrstva (link layer)</strong><br>Přenáší celé bloky dat – rámce (frames), zajišťuje přenos pouze v dosahu přímého spojení.<br><strong>Síťová vrstva (network layer)</strong><br>Přenáší bloky dat (pakety), zajišťuje doručení paketů ke konečnému adresátovi, zajišťuje tzv. směrování (routing).<br><strong>Transportní vrstva (transport layer)</strong><br>Zajišťuje komunikaci mezi koncovými účastníky, jejím účelem je <br>poskytnout takovou kvalitu přenosu, jakou požadují vyšší vrstvy, nabízí <br>spojově (TCP) a nespojově orientované (UDP) protokoly.<br><strong>Relační vrstva (session layer)</strong><br>Zajišťuje pravidla pro navazování a ukončování datových přenosů mezi <br>uzly na síti, služby typu překlad jmen na adresy nebo bezpečnost <br>přístupu.<br><strong>Prezentační vrstva (presentation layer)</strong><br>Zajišťuje převod datových struktur mezi syntaxí používanou na <br>příslušném systému a syntaxí obecnou, př. pro tyto operace jsou např. <br>šifrování, dešifrování a komprese, dekomprese dat.<br><strong>Aplikační vrstva (application layer)</strong><br>Cílem vrstvy je poskytnout aplikacím přístup ke komunikačnímu <br>systému, do této vrstvy se řadí například tyto služby a protokoly: FTP, <br>DNS, DHCP, POP3, SMTP, SSH, Telnet, TFTP.<br><strong>Aktivní prvky kabeláže</strong><br><strong>Hub</strong><br><br>Zajišťuje šíření signálu do více uzlů, pracuje na fyzické vrstvě, přijatý signál zasílá na všechny uzly.<br><strong>Router</strong><br><br>Zařízení propojující více sítí, pracuje na síťové vrstvě, router <br>uchovává tabulku cest mezi uzly a je schopen zvolit optimální trasu pro <br>přenos dat.<br><strong>Switch</strong><br><br>Zajišťuje propojení sítí a směrování přenosu, pracuje na linkové vrstvě, přijatý signál zasílá jen na určitý port.<br><strong>Repeater</strong><br><br>Zařízení pracující na fyzické vrstvě, opakující signál, slouží k propojení kabelů sítě.<br><strong>Architektura TCP/IP (Transmission Control Protocol/Internet Protocol)</strong><br>Je hlavním protokolem celosvětové sítě Internet, výměna informací <br>mezi vrstvami je přesně definována, každá vrstva využívá služeb vrstvy <br>nižší a poskytuje své služby vrstvě vyšší.<br><strong>Vrstva síťového rozhraní (network interface</strong>)<br>Umožňuje přístup k fyzickému přenosovému médiu, pro TCP/IP možno <br>využít všech známých typů přenosových prostředí (Ethernet, Token Ring…).<br><strong>Vrstva mezisíťová (internet layer)</strong><br>Zajišťuje především síťovou adresaci, směrování, předávání datagramů.<br><strong>Transportní vrstva (transport layer)</strong><br>Transportní vrstva je implementována až v koncových zařízeních a <br>umožňuje přizpůsobit chování sítě potřebám aplikace, poskytuje <br>transportní služby kontrolovaným spojením TCP nebo nekontrolovaným <br>spojením UDP.<br><strong>Aplikační vrstva (application layer)</strong><br>Je využívána k přenosu dat až ke konkrétním službám pro uživatele (Telnet, FTP, HTTP, DHCP, DNS).<br></p>
+                        <figure></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

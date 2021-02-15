@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="../../assets/css/Article-List.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark py-lg-4" id="mainNav" style="color: rgb(41,78,115);background: rgb(35,85,136);padding: 15px 10px;">
+        <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#">kvíz it4a</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="color: var(--cyan);">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">úvod</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../podklady.html">podklady</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../kviz.html">kvíz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-center text-white d-none d-lg-block site-heading"><span class="text-primary site-heading-upper mb-3">tým quaranteam</span><span class="site-heading-lower">PRG 2. otázka</span></h1>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Podmíněné příkazy, příkazy cyklu</h1>
+                    </div>
+                    <div class="text">
+                        <p>Podmíněné příkazy<br>Podmíněné příkazy fungují tak, že se vyhodnotí vstupní podmínka a pokud je splněna (TRUE) tak se vykoná určitá část programu.<br><strong>Příkaz IF – podmínka</strong><br><strong><span style="text-decoration: underline;">Tvoření</span></strong><br>IF podmínka THEN příkaz1 ELSE příkaz2;<br><br>Jestliže je splněna podmínka, potom vykonej příkaz1 jinak vykonej příkaz2.<br>Všimněte si, že je středník (oddělovač příkazů) až na konci příkazu, to proto, že jde o jeden celistvý příkaz.<br>Druhou část ELSE je možné vynechat, pak to znamená, že při splnění podmínky je vykonaný příkaz1, jinak se neděje nic.<br><br><strong>Konkrétní příklady:</strong><br>if a&gt;b then label1.caption:=’první číslo je větší‘ else label1.caption:=’druhé číslo je větší‘;<br>(jestliže proměnná a je větší než proměnná b vypiš do label1 text: <br>první číslo je větší, jinak tam vypiš, že druhé číslo je větší (a co <br>když budou stejná :-)?))<br>if edit1.text=’0′ then edit2.text=’zadej větší číslo než nulu‘<br>(jestliže je v edit1 nula potom vypiš do edit2 text zadej větší číslo než nulu.<br><strong>Jako operátory je možné použít</strong> například &lt; , &gt; , &gt;= , &lt;= , &lt;&gt; .<br><strong>Příkaz CASE – podmínky</strong><br><strong><span style="text-decoration: underline;">Tvoření</span></strong><br>CASE proměnná(výraz) OF hodnota1:příkaz1;<br>hodnota2:příkaz2;<br>hodnota3:příkaz3;<br>.<br>.<br>hodnota n:příkaz n;<br>ELSE příkaz;<br>End;<br><br>Za <strong>CASE</strong> se píše proměnná(výraz), který určí jistou hodnotu<br>Za<strong> OF</strong> se píše seznam možných hodnot a příkazy, které se mají vykonat pro každou určitou hodnotu<br>Za <strong>ELSE</strong> se píše příkaz, který se vykoná, pokud se hodnota proměnné(výrazu) neshoduje se žádnou hodnotou se seznamu možných hodnot<br>Funguje to tak že Delphi zjistí jaká hodnota je uložena v proměnné a<br> pokud je to hodnota1 tak se vykoná příkaz1 pokud hodnota2 tak se vykoná<br> příkaz2 atd. Pokud žádná hodnota neodpovídá, vykoná se příkaz za <br>slovem&nbsp;ELSE. Opět platí, že pokud se má např. u hodnoty1 vykonat pouze <br>jeden příkaz můžou se klíčová slova&nbsp;begin&nbsp;a&nbsp;end&nbsp;vynechat:<br><br><strong>Příkazy cyklu</strong><br><br>Umožňují po určitou dobu opakovat určitý počet příkazů. Dělí se na tři typy:<br><br>&nbsp;<br><br><strong>&gt; s pevným počtem opakování (FOR)</strong><br><strong>&gt; s podmínkou na začátku (WHILE)</strong><br><strong>&gt; s podmínkou na konci (REPEAT)</strong><br><br><strong>&nbsp;</strong><br><strong>Příkaz FOR</strong><br><strong><span style="text-decoration: underline;">Tvoření</span></strong><br><strong>FOR proměnná:=výraz1 TO(downto) výraz2 DO příkaz;</strong><br><br>Příkaz FOR je cyklus s&nbsp;předem známým počtem opakování<br>Příkazy cyklu za DO se vykonávají opakovaně pro každou hodnotu řídící proměnné<br>Proměnná nabývá postupně všech hodnot mezi prvním a druhým výrazem a zvětšuje se vždy o jedničku<br>Je li na začátku výraz1 větší než výraz2, příkazy za DO se nevykonají ani jednou<br>DOWNTO – pracuje opačně, hodnota proměnné se postupně zmenšuje<br><br><strong>Příkaz WHILE – s&nbsp;podmínkou na začátku</strong><br><strong><span style="text-decoration: underline;">Tvoření</span></strong><br><strong>WHILE podmínka DO příkaz;</strong><br><br>Je to cyklus s&nbsp;podmínkou na začátku<br>Podmínka za WHILE rozhoduje o provedení příkazu za DO<br>Pokud podmínka platí (TRUE) příkaz se vykonává a znovu se začne <br>vyhodnocovat podmínka. Ale pokud podmínka neplatí (FALSE), příkaz se <br>nevykoná ani jednou a celý cyklus končí.<br>Na rozdíl od REPEAT se příkaz WHILE nemusí provést ani jednou<br><br><strong>Příkaz REPEAT – s&nbsp;podmínkou na konci</strong><br><strong><span style="text-decoration: underline;">Tvoření</span></strong><br><strong>REPEAT příkazy UNTIL podmínka;</strong><br><br>Cyklus s&nbsp;podmínkou na konci<br>Podmínka za UNTIL rozhoduje o zopakování příkazů mezi REPEAT a UNTIL<br>Pokud podmínka za UNTIL neplatí (FALSE), příkazy se vykonávají znovu<br>Pokud podmínka za UNTIL platí (TRUE), příkazy se nevykonají a celý cyklus končí.<br>Mezi REPEAT a UNTIL lze zapsat několik příkazů<br><br>Příkazová část se vykonává alespoň jednou.<br><br></p>
+                        <figure></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

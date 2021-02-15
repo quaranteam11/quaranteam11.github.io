@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="../../assets/css/Article-List.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark py-lg-4" id="mainNav" style="color: rgb(41,78,115);background: rgb(35,85,136);padding: 15px 10px;">
+        <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#">kvíz it4a</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="color: var(--cyan);">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">úvod</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../podklady.html">podklady</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../kviz.html">kvíz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-center text-white d-none d-lg-block site-heading"><span class="text-primary site-heading-upper mb-3">tým quaranteam</span><span class="site-heading-lower">PRG 6. otázka</span></h1>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Vizualní a objektově orientované programování, základní pojmy a prinicpy</h1>
+                    </div>
+                    <div class="text">
+                        <p><strong>Třídící algoritmy</strong><br><br>BUBLLE SORT<br>Mění se a porovnávají čísla vedle sebe<br>Když nesouhlasí, první se prohodí<br>Dělá se n-1<br><br>&nbsp;<br>Princip<br>Tato třídící metoda je ze všech uvedených metod nejjednodušší, ale <br>také nejpomalejší. Její princip spočívá v jednoduché záměně dvou <br>sousedních prvků, pokud nevyhovují dané podmínce. Procedura obsahuje dva<br> do sebe vnořené cykly, vnější zajišťuje zmenšování počtu prvků, které <br>stále nejsou setříděny a vnitřní cyklus zajišťuje vlastní výměny dvou <br>prvků v jednom průchodu posloupností.<br>&nbsp;<br><br>INSERT SORT<br>Třídění vkládáním<br><br>&nbsp;<br><strong>Princip</strong><br>Tato metoda je založena na principu vkládání prvku na jeho správné <br>místo v posloupnosti.&nbsp; Jak si můžete porovnat předchozí výpisy metod s <br>výpisem této metody, používá pole o velikostí ne 10, ale 11 prvků, <br>počínaje již nultým prvkem. Tento se v celé posloupnosti využívá jako <br>pomocný prvek a samotná posloupnosti jej do sebe nezahrnuje.<br>&nbsp;<br><br>SELECT SORT<br>Vybereme nejmenší (největší) číslo a porovnáváme s&nbsp;prvním, pokud sedí velikost, promění se prvky mezi sebou<br><br>&nbsp;<br><strong>Princip</strong><br>Metoda pracuje na principu nalezení minimálního prvku v nesetříděné <br>části posloupností a jeho zařazení na konec již setříděné posloupnosti. <br>Metoda prochází celou nesetříděnou část posloupnosti a hledá nejmenší <br>prvek. Až jej nalezne, vrátí se na konec již setříděné části <br>posloupnosti a tento nejmenší prvek zde uloží. Tyto dvě činnosti <br>vykonává do té doby, dokud neprojde celou posloupnost a nesetřídí ji.<br><strong>Rekurze</strong><br>V imperativním&nbsp;<a href="http://cs.wikipedia.org/wiki/Programov%C3%A1n%C3%AD">programování</a>&nbsp;rekurze představuje opakované vnořené volání stejné&nbsp;<a href="http://cs.wikipedia.org/wiki/Funkce_(programov%C3%A1n%C3%AD)">funkce</a>&nbsp;(podprogramu), v takovém případě se hovoří o&nbsp;<a href="http://cs.wikipedia.org/wiki/Rekurzivn%C3%AD_funkce_(programov%C3%A1n%C3%AD)">rekurzivní funkci</a>.<br> Nedílnou součástí rekurzivní funkce musí být ukončující podmínka <br>určující, kdy se má vnořování zastavit. Jelikož bývá nejčastějším <br>zdrojem chyb, je třeba ji navrhnout dostatečně robustním způsobem a <br>prověřit veškeré možné stavy.<br>Pro uplatnění rekurzivních algoritmů je zapotřebí, aby programovací <br>jazyk umožňoval volání podprogramu ještě před ukončením jeho předchozího<br> volání.<br>Po každém kroku volání sebe sama musí dojít ke zjednodušení problému.<br> Pokud nenastane koncová situace, provede se rekurzivní krok.<br>Každý&nbsp;<a href="http://cs.wikipedia.org/wiki/Algoritmus">algoritmus</a>&nbsp;využívající rekurzi lze přepsat do nerekurzivního tvaru při použití&nbsp;<a href="http://cs.wikipedia.org/wiki/Z%C3%A1sobn%C3%ADk_(informatika)">zásobníku</a>&nbsp;nebo jiné paměťové struktury.<br>– způsob volání procedur a funkcí<br>– takové volání, které nastane dřív, než předchozí volání skončí<br>– 2 typy – PŘÍMÁ, VZÁJEMNÁ<br>&nbsp;<br><br>PŘÍMÁ REKURZE<br>Pokud procedura nebo funkce volá sama sebe<br><br>&nbsp;<br>&nbsp;<br><br>VZÁJEMNÁ REKURZE<br>Když v&nbsp;jedné proceduře voláme jinou proceduru a v&nbsp;druhé voláme zaes první proceduru<br>Může být víc procedur a funkcí<br>Podmínka rekurze –<br>kdy vzájemné volání podprogramů vytvoří „kruh“. Např. v příkazové části funkce<em>A</em>&nbsp;je volána funkce&nbsp;<em>B</em>, ve funkci&nbsp;<em>B</em>&nbsp;voláme funkci&nbsp;<em>C</em>, která volá funkci&nbsp;<em>A</em>.<br><br>&nbsp;<br>Výhoda rekurze<br><br>jednoduchost<br>přehlednost programu<br><br>&nbsp;<br>Nevýhoda rekurze<br><br>Časová náročnost<br>Paměťová náročnost – vymezování většího počtu paměťového místa<br><br><br></p>
+                        <figure></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

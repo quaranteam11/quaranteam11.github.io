@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="../../assets/css/Article-List.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark py-lg-4" id="mainNav" style="color: rgb(41,78,115);background: rgb(35,85,136);padding: 15px 10px;">
+        <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#">kvíz it4a</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="color: var(--cyan);">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">úvod</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../podklady.html">podklady</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../kviz.html">kvíz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-center text-white d-none d-lg-block site-heading"><span class="text-primary site-heading-upper mb-3">tým quaranteam</span><span class="site-heading-lower">PRG 4. otázka</span></h1>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Procedury a funkce</h1>
+                    </div>
+                    <div class="text">
+                        <p><strong>Pole</strong><br>Pole je datová struktura skládající se ze složek stejného typu, které<br> se vzájemně rozlišují pomocí indexů. S&nbsp;každou proměnnou typu pole <br>můžeme v&nbsp;programu pracovat buď jako s&nbsp;celkem nebo s&nbsp;jejími jednotlivými <br>složkami.<br><strong>Záznam (record)</strong><br>Záznam je datová struktura skládající se z&nbsp;určitého počtu <br>pojmenovaných položek, které mohou být různého typu a které nazýváme <br>položkami záznamu<br>Položky patřící do jednoto typu záznamu musí být pojmenovány vzájemně<br> různými identifikátory, tyto identifikátory se však mohou shodovat <br>s&nbsp;identifikátory vně popisu záznamu.<br>Var a:integer;<br>Z:record a:char;<br>b:integer;<br>end;<br>Touto deklarací je zavedena proměnná A typu integer a proměnná Z&nbsp;typu<br> záznam. Proměnná Z&nbsp;se skládá z&nbsp;položky A typu char a položky B typu <br>integer.<br><strong>Soubor</strong><br>V&nbsp;jazyku Pascal se každý soubor chápe jako posloupnost složek <br>stejného typu pro něž jsou definovány určité operace. Tyto operace <br>umožňují vytvoření souboru, čtení nebo zápis do souboru a zpracování <br>souboru. V&nbsp;každém okamžiku zpracování souboru je přístupná jediná jeho <br>složka.<br>Vlastnosti souboru jsou určeny jeho typem. Typem složky může být <br>jakýkoli datový typ s&nbsp;výjimkou typu soubor (nelze mít soubor souborů).<br><strong>Přístup ke složkám</strong><br>Ukazatel ukazuje v&nbsp;každém okamžiku na jednu aktuální složku souboru, <br>při každém zápisu nebo čtení se ukazatel posune na složku následující. <br>Lze vypočítat polohu každé složky, což umožňuje i přímý přístup <br>k&nbsp;libovolné složce<br><strong>Operace se soubory</strong><br>Assign(f,s) – externí (vnější) jméno souboru S&nbsp;typu string bude <br>přiřazeno interní (vnitřní) proměnné F typu soubor. Tato operace musí <br>být při práci se souborem použita vždy jako první<br>Rewrite(f) – vytvoří se nový soubor F a otevře se pro zápis. Ukazatel<br> souboru ukazuje na začátek, tj. na složku číslo 0. Soubor F je po <br>provedení rewrite prázdný<br>Write(f,sez) – do souboru F je zapsána proměnná SEZ, která je <br>stejného typu jako složka souboru F. Ukazatel se po zápisu přesune na <br>následující složku<br>Reset(f) – otevře již existující soubor pro zpracování, ukazatel <br>nastaví na začátek, tj. na složku č. 0. Pokud soubor neexistuje, dojde <br>k&nbsp;chybě vstupu<br>Read(f,sez) – ze souboru F je načtena jedna složka do proměnné SEZ, <br>která je stejného typu jako složka souboru F. Ukazatel se po načtení <br>posune na následující složku<br>Seek(f,n) – ukazatel se přesune na n-tou složku souboru F<br>Erase(f) – vymaže se soubor přiřazený proměnné F<br>Rename(f,s) – přejmenuje se soubor F jménem S<br>Close(f) – uzavře soubor F po zpracování<br>Eof(f) – vrací logickou hodnotu true, je-li ukazatel na konci souboru<br>Filepos(f) – vrací aktuální polohu ukazatele souboru F<br>Filesize(f) – vrací počet složek souboru F<br><strong>Příkaz with</strong><br>Práce s&nbsp;proměnnými typu záznam často vede k&nbsp;dosti dlouhému a <br>složitému zápisu při identifikaci jednotlivých položek proměnné. Příkaz <br>with dovolí pracovat s&nbsp;položkami záznamu tak, jakoby se pracovalo <br>s&nbsp;jednoduchými proměnnými.<br><br></p>
+                        <figure></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

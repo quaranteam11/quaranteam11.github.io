@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="../../assets/css/Article-List.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark py-lg-4" id="mainNav" style="color: rgb(41,78,115);background: rgb(35,85,136);padding: 15px 10px;">
+        <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#">kvíz it4a</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="color: var(--cyan);">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">úvod</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../podklady.html">podklady</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../kviz.html">kvíz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-center text-white d-none d-lg-block site-heading"><span class="text-primary site-heading-upper mb-3">tým quaranteam</span><span class="site-heading-lower">PRG 8. otázka</span></h1>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">Přehled základních komponent - využití, vlastnosti, události</h1>
+                    </div>
+                    <div class="text">
+                        <p><br><strong>Delphi a jeho předchůdci</strong><br>Delphi je vývojový prostředek pro vytváření programů pracujících <br>v&nbsp;prostředí MS Windows, který v&nbsp;sobě spojuje silnou sadu vizuálních <br>nástrojů pro tvorbu všech částí aplikace s&nbsp;výkonným kompilátorem a <br>prostředky pro vytváření databázových aplikací. Delphi je nástupcem <br>Turbo Borland Pascalu a Object Pascalu a je založeno na objektově <br>orientovaném programování a na vizuálním programování. Vizuální <br>programování umožňuje vytváření uživatelského rozhraní jinak než psaním <br>textu programu – pomocí již vytvořených komponent. Delphi obsahuje <br>princip dvoucestných nástrojů (two way tools), tj. vazby mezi vizuální a<br> textovou (programovou) tvorbou aplikace.<br><strong>Prostředí Delphi</strong><br><strong>Nástrojová lišta</strong><br>Standardní nástrojová lišta má tlačítka ve dvou řádcích rozložena do 4 skupin:<br>4 z&nbsp;menu FILE – open, save all, save, new<br>2 z&nbsp;menu NEW PROJECT – add file to project, remove file to project<br>4 z&nbsp;menu VIEW – view unit, view form, toggle form/unit, new form<br>4 z&nbsp;menu RUN – run, pause, trace into, step ower<br><strong>Paleta komponent</strong><br>Komponenty jsou základní stavební prvky každé aplikace Delphi a tvoří<br> tzn. visual component libraly (VCL). Paleta komponent je specializovaný<br> druh nástrojové lišty, který zpřístupňuje všechny komponenty z&nbsp;VCL.<br><strong>Form designer</strong><br>Zde se odehrává celý vizuální návrh aplikace. Na začátku je to <br>prázdná pracovní plocha s&nbsp;vytečkovanou mřížkou na kterou postupně <br>umisťujeme komponenty, propojujeme je a pracujeme s&nbsp;daty. Program má <br>vždy hlavní a někdy i sekundární formuláře.<br><strong>Postup tvorby projektu</strong><br><br>Vybereme na paletě příslušné komponenty a prdneme je na formulář<br>Provedeme propojení komponent a nastavení vlastností v&nbsp;object inspektor (properties)<br>Ošetříme jednotlivé události v&nbsp;object inspektoru (events)<br>Naprogramujeme zdrojový kód<br><br><strong>&nbsp;</strong><br><strong>&nbsp;</strong><br><strong>&nbsp;</strong><br><strong>Object inspector</strong><br>Obsah OI se mění podle toho, která komponenta je právě aktivní. Na <br>počátku tedy zobrazuje parametry formuláře. Existují dva druhy parametrů<br> komponent a to: viditelné a neviditelné. Každá vlastnost má počáteční <br>hodnotu. Z&nbsp;programového hlediska nejsou vlastnosti nic jiného než <br>lokální proměnné daného objektu. Množina přípustných hodnot je určena <br>datovým typem.<br>Events – zde definujeme způsob reakce na nějaký úhon provedaný s&nbsp;komponentou.<br><strong>Formulář</strong><br>Základní komponentou Delphi je formulář, který reprezentuje <br>windowsovské wokno. Formulář je komponenta typu TForm. V&nbsp;Delphi <br>vytváříme základ aplikace úpravou formuláře: umístěním dalších komponent<br> na formulář a jejich propojením, nastavením vlastností samotného <br>formuláře a podřízením komponent a doprogramováním potřebných událostí. <br>Program má zpravidla jeden hlavní formulář a může mít i jeden nebo více <br>formulářů sekundárních. Hlavní formulář zpravidla zůstává viditelný po <br>celou dobu běhu aplikace, sekundární se zobrazují a zase mizí za chodu. <br>Formulář stejně jako každá jiná komponenta má své vlastnosti a události.<br><strong>Vlastnosti</strong><br><img src="../../assets/img/27.png"><br><br><br><br><strong>Událost</strong><br><strong>Využití</strong><br><img src="../../assets/img/28.png"><br><br><strong>Program</strong><br>Model vývoje programů v&nbsp;Delphi<br><br>otevření nového projektu<br>Návrh formuláře – umístění komponent a nastavení paramentrů nebo vlastností v&nbsp;objekt inspektoru<br>Dopsání kódu<br>Kompilace<br>Vyzkoušení (ladění a testování)<br><br>&nbsp;<br><strong>Uložení projektu</strong><br>menu File – Save project<br>Pro jména souborů obvykle využíváme jméno formuláře:<br><br>zdrojový kód – soubor_f.pas<br><br>projekt: jméno.dpr<br></p>
+                        <figure></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
